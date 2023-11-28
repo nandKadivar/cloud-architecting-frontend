@@ -1,9 +1,8 @@
-import React from "react";
-import axios from "axios";
+import axios from "../customAxiosConfig/CustomAxiosConfig";
 
 const HomeService = () => {
   try {
-    return axios.get("http://backend-nlb-c78efa861b0e6cc0.elb.us-east-1.amazonaws.com:8080/");
+    return axios.get("/");
   } catch (err) {
     let error = "";
     if (err.response) {
