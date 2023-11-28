@@ -1,8 +1,8 @@
-import axios from "../customAxiosConfig/CustomAxiosConfig";
+import axios from "axios";
 
 const AuthenticateUserDataService = (username, password) => {
   return axios
-    .post(`/authenticate`, {
+    .post(`http://public-app-nlb-992547abe09f1ef7.elb.us-east-1.amazonaws.com/authenticate`, {
       username,
       password,
     })

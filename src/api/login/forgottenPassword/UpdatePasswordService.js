@@ -1,10 +1,10 @@
-import axios from "../../customAxiosConfig/CustomAxiosConfig";
+import axios from "axios";
 
 const UpdatePasswordService = (id, password) => {
   console.log(id, password);
 
   try {
-    return axios.put(`/password`, null, {
+    return axios.put(`http://public-app-nlb-992547abe09f1ef7.elb.us-east-1.amazonaws.com/password`, null, {
       params: {
         id,
         password,

@@ -1,8 +1,8 @@
-import axios from "../customAxiosConfig/CustomAxiosConfig";
+import axios from "axios";
 
 const HomeService = () => {
   try {
-    return axios.get("/");
+    return axios.get("http://public-app-nlb-992547abe09f1ef7.elb.us-east-1.amazonaws.com/");
   } catch (err) {
     let error = "";
     if (err.response) {
