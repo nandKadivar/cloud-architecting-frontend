@@ -2,7 +2,7 @@ import axios from "axios";
 
 // axios instance for making requests
 const axiosInstance = axios.create({
-  baseURL: "http://backend-nlb-c78efa861b0e6cc0.elb.us-east-1.amazonaws.com:8080",
+  baseURL: "http://public-app-nlb-992547abe09f1ef7.elb.us-east-1.amazonaws.com",
 });
 
 // request interceptor for adding token
