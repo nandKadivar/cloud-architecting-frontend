@@ -2,7 +2,7 @@ import axios from "axios";
 
 const AuthenticateUserDataService = (username, password) => {
   return axios
-    .post(`http://localhost:8080/authenticate`, {
+    .post(`http://backend-nlb-c78efa861b0e6cc0.elb.us-east-1.amazonaws.com:8080/authenticate`, {
       username,
       password,
     })

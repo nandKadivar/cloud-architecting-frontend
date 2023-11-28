@@ -3,7 +3,7 @@ import axios from "axios";
 
 const HomeService = () => {
   try {
-    return axios.get("http://localhost:8080/");
+    return axios.get("http://backend-nlb-c78efa861b0e6cc0.elb.us-east-1.amazonaws.com:8080/");
   } catch (err) {
     let error = "";
     if (err.response) {
