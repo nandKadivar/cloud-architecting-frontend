@@ -40,11 +40,11 @@ const CreateOffer = () => {
   const S3_BUCKET = "term-project-application";
   const REGION = "us-east-1";
 
-  AWS.config.update({
-    accessKeyId: "ASIAUTEIRYV5MI46OFPT",
-    secretAccessKey: "XiQR4WTCD0SglZ2cwMg5DpI6jMHb3tpSlxoTFqxH",
-    sessionToken: "FwoGZXIvYXdzEM///////////wEaDD8rZGLSi4lZFXWwqSLCAazcYFTFA8nX7wWLrKG2272XMEYQb4lb/MDI46Bkf0T4E9Apn08qaqPXnuFoOKY4aY6JnEWPcD/lNzsoyQOMdeRvWSHEKJJroWxdcFN0S3hJwoKNCaMy7ObFPPP6d4hKbzbTwSQik44z1+I/oXnHbcCbRs/bgHecwPlA2St4bbpUGOcneZl3URoL2aLL7c0pBFy9EtKVblc3sT8bExXkQFFbVmDAdilCQonIsY/OuUvz48Seqy7/N1w9Wu2c2ns5KOzIKPHk8qoGMi2Y9HFn6MCflOPwzscsJK/zYSyFUbUXdxP0v1tdqjdkqQBCY1Q4pePvze+zyCI="
-  });
+  // AWS.config.update({
+  //   accessKeyId: "ASIAUTEIRYV5MI46OFPT",
+  //   secretAccessKey: "XiQR4WTCD0SglZ2cwMg5DpI6jMHb3tpSlxoTFqxH",
+  //   sessionToken: "FwoGZXIvYXdzEM///////////wEaDD8rZGLSi4lZFXWwqSLCAazcYFTFA8nX7wWLrKG2272XMEYQb4lb/MDI46Bkf0T4E9Apn08qaqPXnuFoOKY4aY6JnEWPcD/lNzsoyQOMdeRvWSHEKJJroWxdcFN0S3hJwoKNCaMy7ObFPPP6d4hKbzbTwSQik44z1+I/oXnHbcCbRs/bgHecwPlA2St4bbpUGOcneZl3URoL2aLL7c0pBFy9EtKVblc3sT8bExXkQFFbVmDAdilCQonIsY/OuUvz48Seqy7/N1w9Wu2c2ns5KOzIKPHk8qoGMi2Y9HFn6MCflOPwzscsJK/zYSyFUbUXdxP0v1tdqjdkqQBCY1Q4pePvze+zyCI="
+  // });
 
   const s3 = new AWS.S3({
     params: { Bucket: S3_BUCKET },
